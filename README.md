@@ -6,10 +6,8 @@ A simple web frontend for dumphfdl and dumpvdl2
 - No external HTTP-Server needed (using Python's SimpleHTTP-Server)
 
 ## Useage
-- Add a JSON log file to your dumphfdl command ("--output decoded:json:file:path=/home/pi/hfdl.log")
 - Add ZMQ output to your dumphfdl command ("--output decoded:json:zmq:mode=server,endpoint=tcp://*:5555")
-- Run dumphfdl
-- Start server.py
+ Start server.py
 - Open "http://<device-ip>:8000/" in your browser
 
 HTTP port (default: 8000) and log file path (default: /home/pi/hfdl.log) can be set in settings.py  **This might be necessary**
