@@ -114,13 +114,13 @@
 	
 		if (d < 10) {d = "0"+String(d);} else {	d = String(d);}
 		if (o < 10) {o = "0"+String(o);} else { o = String(o);}
-		y = String(y-2000);
+		y = String(y);
 	
 		if (h < 10) {h = "0"+String(h);} else { h = String(h);}
 		if (m < 10) {m = "0"+String(m);} else { m = String(m);}
 		if (s < 10) {s = "0"+String(s);} else { s = String(s);}
 	
-		return d+"."+o+"."+y+" - "+h+":"+m+":"+s;
+		return y+"-"+o+"-"+d+" - "+h+":"+m+":"+s;
 	}
 
 	function countObj(a) {

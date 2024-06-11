@@ -12,7 +12,7 @@ DIR        = os.path.dirname(os.path.realpath(__file__))
 def receiver():
 	context = zmq.Context()
 	socket = context.socket(zmq.SUB)
-	socket.connect(f"tcp://127.0.0.1:{settings.ZMQ_PORT}")
+	socket.connect(f"tcp://{settings.ZMQ_HOST}:{settings.ZMQ_PORT}")
 	socket.setsockopt(zmq.SUBSCRIBE, b'')
 
 	wss = WebsocketServer(host='', port=settings.WS_PORT)
